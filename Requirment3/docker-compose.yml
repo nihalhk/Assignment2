@@ -1,0 +1,14 @@
+version: "3.8" 
+services:
+  psqlcssci2690:
+    image: postgis/postgis
+    restart: always
+    environment: 
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=csci2690
+    ports:
+      - "5432:5432"
+    container_name: psqlcssci2690
+
